@@ -14,6 +14,7 @@ from tools.models import Categories, Products
 @admin.register(Categories)
 class CategoriesAdmin(admin.ModelAdmin):
     # prepopulated_fields={'slug':('name',)}
+    fields_display=('name',)
     ordering=('name',)
 
 @admin.register(Products)
